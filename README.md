@@ -2,7 +2,7 @@
 
 ## Mover - An automatic file copy tool.  
   
-Automatic file copy tool. The mover tool will check a given directory for any files and copy all of them to the specified directory at a set interval. By default logs are store at "C:\mover\logs".  
+Automatic file copy tool. The mover tool will check a given directory for any files and move all of them to the specified directory at a set interval. By default logs are store at "C:\mover\logs".  
   
 ### Usage  
 **`mover.exe <from-directory> <to-directory> [/i <interval-in-seconds>] [/c] [/o]`**  
