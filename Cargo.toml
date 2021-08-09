@@ -1,6 +1,6 @@
 [package]
 name = "mover"
-version = "0.0.1"
+version = "1.0.0"
 authors = ["Robert Jones <rjjones@fastmail.com>"]
 edition = "2018"
 
@@ -8,7 +8,7 @@ edition = "2018"
 
 [dependencies]
 chrono = "0.4.19"
-same-file = "1"
+file_diff = "1.0.0"
 
 [target.'cfg(windows)'.build-dependencies]
 winres = "0.1"
