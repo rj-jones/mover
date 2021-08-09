@@ -31,7 +31,7 @@ Optional - By default, files in the *to-directory* with the same name and relati
 Example: `mover.exe "..\from" "..\to" /o`  
 
 
-## Version 0.0.2
+## Version 1.0.0
 - Added option /c - Keeps the original files that were moved (no removal of originals after copying).
 - Added option /o - Overwrites files in the to-directory that have the same relative path and name, but different file contents.
 - Added more detailed logging for invalid/missing paths, and start up info. No more empty logs.
