@@ -173,7 +173,7 @@ fn remove_file(options: &mut Options, from_path: &PathBuf, to_path: &PathBuf) {
 
 /**
  * Prints the programs about info, similar to the README documentation.
- * TODO: Add /log and /log:o (logs in file structure based on year)
+ * TODO: Add more log options (path & structure).
  */
 fn print_about_info() {
     println!("--INFO--{}---------------------------------------------------------------------------------------", VERSION);
@@ -183,19 +183,28 @@ fn print_about_info() {
     println!("                                                                                                    ");
     println!("<to-directory>                Required - The directory move content to.                             ");
     println!("                                                                                                    ");
-    println!("[/i <interval-in-seconds>]    Optional - The interval (in seconds) at which to check the            ");
+    println!("[/i <interval-in-seconds>]    Optional - Optional - The interval (in seconds) at which to check the ");
     println!("                                         from-directory for content. Anything found will be moved   ");
-    println!("                                         into the to directory. If you use this option, you must    ");
-    println!("                                         supply the value <interval-in-seconds>.                    ");
+    println!("                                         into the to-directory. If you use this option, you must    ");
+    println!("                                         supply the value <interval-in-seconds>. The default value  ");
+    println!("                                         is 1 second.                                               ");
     println!("                                                                                                    ");
     println!("                                         Example: mover.exe \"..\\from\" \"..\\to\" /i 5            ");
     println!("                                                                                                    ");
-    println!("[/copy]                       Optional - By default directories and their content will be copied and");
-    println!("                                         the originals will be deleted, essentially moving them. By ");
-    println!("                                         using the /copy option, the originals will not be deleted  ");
+    println!("[/c]                          Optional - By default, directories and their content will be copied   ");
+    println!("                                         and the originals will be deleted, essentially moving them.");
+    println!("                                         By using the /c option, the originals will not be deleted  ");
     println!("                                         after being copied.                                        ");
     println!("                                                                                                    ");
-    println!("                                         Example: mover.exe \"..\\from\" \"..\\to\" /copy           ");
+    println!("                                         Example: mover.exe \"..\\from\" \"..\\to\" /c              ");
+    println!("                                                                                                    ");
+    println!("[/o]                          Optional - By default, files in the to-directory with the same name   ");
+    println!("                                         and relative path as files in the from-directory will not  ");
+    println!("                                         be overwritten, even if the file contents are different. By");
+    println!("                                         using the /o option, files in the to-directory will be     ");
+    println!("                                         overwritten.                                               ");
+    println!("                                                                                                    ");
+    println!("                                         Example: mover.exe \"..\\from\" \"..\\to\" /o              ");
     println!("----------------------------------------------------------------------------------------------------");
 }
 
