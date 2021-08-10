@@ -36,5 +36,5 @@ Example: `mover.exe "..\from" "..\to" /o`
 - Added option /o - Overwrites files in the to-directory that have the same relative path and name, but different file contents.
 - Added more detailed logging for invalid/missing paths, and start up info. No more empty logs.
 - Better path validation for user supplied arguments.
-- Fixed crash when no aruments are given.
+- Fixed crash when no arguments are given.
 - Fixed issue copying directories.
